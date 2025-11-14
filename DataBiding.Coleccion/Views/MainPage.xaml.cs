@@ -1,10 +1,63 @@
+<<<<<<< HEAD
 using DataBiding.Coleccion.Models;
+=======
+using DataBinding.Coleccion.Models;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+
+>>>>>>> 82dd936 (Ejemplo de data binding a una colección de objetos)
 
 namespace DataBiding.Coleccion.Views;
 
 public partial class MainPage : ContentPage
 {
+<<<<<<< HEAD
 	private List<OrigenDePaquete> _origenes;
+=======
+    public ObservableCollection<OrigenDePaquete> Origenes { get; }
+	private OrigenDePaquete? _origenSeleccionado = null;
+	private string? _nombreDelOrigen = string.Empty;
+	private string? _rutaDelOrigen = string.Empty;
+
+	public OrigenDePaquete? OrigenSeleccionado
+	{
+		get => _origenSeleccionado;
+		set
+		{
+			if (_origenSeleccionado != value)
+			{
+				_origenSeleccionado = value;
+				OnPropertyChanged(nameof(OrigenSeleccionado));
+			}
+		}
+	}
+
+	public string? NombreDelOrigen
+	{
+		get => _nombreDelOrigen;
+		set
+		{
+			if( _nombreDelOrigen != value)
+			{
+				_nombreDelOrigen= value;
+				OnPropertyChanged(nameof(NombreDelOrigen));
+			}
+		}
+	}
+
+	public string? RutaDelOrigen
+	{
+		get => _rutaDelOrigen;
+		set
+		{
+			if (_rutaDelOrigen != value)
+			{
+				_rutaDelOrigen = value;
+				OnPropertyChanged (nameof(RutaDelOrigen));
+			}
+		}
+	}
+>>>>>>> 82dd936 (Ejemplo de data binding a una colección de objetos)
 
 	public MainPage()
 	{

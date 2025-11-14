@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+<<<<<<< HEAD
              xmlns:models ="clr-namespace:DataBiding.Coleccion.Models"
+=======
+             xmlns:views ="clr-namespace:DataBiding.Coleccion.Views"
+             xmlns:models ="clr-namespace:DataBinding.Coleccion.Models"
+             x:DataType="views:MainPage"
+>>>>>>> 82dd936 (Ejemplo de data binding a una colección de objetos)
              x:Class="DataBiding.Coleccion.Views.MainPage"
              Title=""
              BackgroundColor="#F0F0F0">
